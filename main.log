@@ -1,0 +1,32 @@
+setting options
+Attempting to Login at url: https://emergproc.pjm.com/epsql/ep_nav.login_proc?p_user=guest&p_password=guest&p_guest=1&p_link=1 
+Attempting to Get Reponse From: https://emergproc.pjm.com/epsql/ep_report.messages?p_apply=1&p_last2act=1&p_type=ALL&p_region=ALL&p_sort=Z
+Parsing HTML response
+Finding Download Link
+Attempting to download from https://emergproc.pjm.com/j2ee/servlet/com.pjm.xml.download.ep.EPXMLDownload?downloadtype=ep&p_id=&p_msgs=14607703
+parsing xml
+Storing xml elements into a dictionary list
+Storing new xml elements into the database
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+duplicate entry
+No new messages

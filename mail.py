@@ -25,14 +25,15 @@ def getNewMessages():
     message_string += '''message time: {0}\n message type: {1}\n message: {2}\n------------------------------------\n '''.format(*message)
   cur.execute(''' UPDATE emergency_message SET reviewed = TRUE; ''')
   conn.commit()
-  #cur.close()
-  #conn.close()
+  cur.close()
+  conn.close()
   return message_string
 
 # The actual mail send  
 def sendMail():
   message_string = getNewMessages()
   if message_string == False:
+    message_string = 'There are no new messsages'
     print('No new messages')
   else:
     server = smtplib.SMTP('smtp.gmail.com:587')
@@ -40,5 +41,5 @@ def sendMail():
     server.login(username,password)
     server.sendmail(fromaddr, toaddrs, message_string)
     server.quit()
-
+    print('mail sent')
 #sendMail()
